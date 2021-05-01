@@ -23,7 +23,7 @@ export interface Icrypto{
   rank_delta: string;
   high: string;
   high_timestamp: string;
-  yes: cryptoInfo;
+  _1d: cryptoInfo;
 
 }
 

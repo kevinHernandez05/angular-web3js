@@ -10,17 +10,24 @@ import { NomicsApi } from '../../services/nomics-api.service';
 })
 export class CryptotableComponent implements OnInit {
 
-  coins: string[] = ["BTC"];
   cryptos: any = [];
+
+  dropdownList = [];
+  selectedItems = [];
+  dropdownSettings = {};
 
   constructor(private api: NomicsApi) { }
 
   ngOnInit(): void {
-    this.api.getCryptocurrency(this.coins).subscribe(
+    this.api.getCryptocurrency(this.selectedItems).subscribe(
       data =>{
         this.cryptos = data;
       }
     );
+  }
+
+  getCoins(){
+
   }
 
 }
