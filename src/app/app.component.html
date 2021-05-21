@@ -65,6 +65,7 @@
           />
         </svg>
 
+        <!--Profile Image-->
         <img
           class="h-9 rounded-full border border-gray-100 shadow-sm"
           src="https://media-exp1.licdn.com/dms/image/C4E03AQF8PitUVkyjww/profile-displayphoto-shrink_100_100/0/1616245037734?e=1623283200&v=beta&t=4PPWWXJQPynwsgMfURCNSM5804SCZ278SztTEWD0WDM"
@@ -90,7 +91,8 @@
       >
         <button
           class="flex items-center align-middle py-2 bg-white shadow-md rounded-3xl text-gray-800 text-sm font-semibold ml-2 border border-gray-200 hover:shadow-xl transition-all w-full focus:outline-none"
-        >
+          (click)="openModal('createContract')"
+          >
           <svg class="h-8 px-4" viewBox="0 0 36 36">
             <path
               class="ng-tns-c17-1"
@@ -224,6 +226,12 @@
     </div>
   </div>
 </div>
+
+<ng-modal class="modal" id="createContract">
+
+  <!-- <button (click)="closeModal('createContract');">Close</button> -->
+</ng-modal>
+
 
 <style>
   body {
