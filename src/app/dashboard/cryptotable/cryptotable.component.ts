@@ -13,7 +13,7 @@ export class CryptotableComponent implements OnInit {
   cryptos: any = [];
 
   dropdownList = [];
-  selectedItems = ['XRP'];
+  selectedItems = ['XRP', 'BTC', 'USDC', 'SOL', 'ETH'];
   dropdownSettings = {};
 
   constructor(private api: NomicsApi) { }
